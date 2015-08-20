@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>首頁</title>
+    <!--使用jQuery來與伺服器溝通-->
+    <script src="js/jquery.min.js"></script>
+    <!--javaScript 來進行幕後處理-->
+    <script src="js/home.js"></script>
+    <!--
+  <script type="text/javascript"      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbhEc4uTXbChgqAGn3qMZOFGrmoqVJOrw">
+    </script> -->
+    <!--<script src="js/map.js"></script>-->
+    <link type="text/css" rel="stylesheet" href="css/homeStyle.css">
+  </head>
+  <body id="body" >
+    <div style="text-align: center;" id="toplogo"><img title="ssquarelogo" alt="sslogo"
+
+        src="img/ssquarelogo.png"></div>
+    <div id="topBar" style="text-align: center;"></div>
+    <div id="login" style="text-align: center;">
+      <form name="loginForm"> <input name="username" value="" type="text"> <button
+
+          type="button" onclick="check()">登入</button> </form>
+    </div>
+    <div style="text-align: center;"> <button id="clearLocalStorage" onclick="clearLocalStorage()">清除本地資料</button>
+    </div>
+    <div id="view" ></div>
+    <div id="home" >
+      
+    
+    <div id="btn1">
+    <span id="title"><button onclick="goToMap()">地圖</button></span>
+    </div>
+    <div id="btn2">
+    <span id="title"><button onclick="goToBag()">背包</button></span>
+    </div>
+    <div id="btn3">
+    <span id="title"><button onclick="goToMonsterList()">圖鑑</button></span>
+    </div>
+    <div id="btn4">
+    <span id="title"><button onclick="goToFriendList()">好友</button> </span>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<div id="message">message</div>-->
+    
+  </body>
+</html>
